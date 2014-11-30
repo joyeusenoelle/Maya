@@ -1,4 +1,4 @@
-<?php // Used for main blog display. 
+<?php // Used to display a single Post
 
 get_header();
 
@@ -11,19 +11,25 @@ if (have_posts()) : while (have_posts()) : the_post();
             	<!-- Post header: title, date, and other info -->
             	<div class="post-head" id="post-head-<?php the_ID(); ?>">
                 	<div class="post-title" id="post-title-<?php the_ID(); ?>">
-                    	<a class="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to this post"><?php the_title(); ?></a>
+                    	<?php the_title(); ?>
                     </div>
                     <div class="post-info" id="post-info-<?php the_ID(); ?>">
-                    	<span class="postDate"><?php echo get_the_date('d F Y'); ?></span><br />
+                    	<span class="postDate"><a class="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to this post"><?php echo get_the_date('d F Y'); ?></a></span><br />
                     </div>
 				</div>
                 <br clear="all">
                 <!-- Post content -->
                 <div class="post-content" id="post-content-<?php the_ID(); ?>">
                 	<?php the_content('More... &raquo'); ?>
+                    <a name="comments">&nbsp;</a>
                     <?php comments_template(); ?>
+                    <div class="post-navigation">
+                        <?php previous_post_link('&laquo; %link'); ?>
+                        <?php next_post_link('&sect; %link &raquo;'); ?>
+                    </div>
                 </div>
 			</div>
+                
 
 <? 	endwhile; 
 	else: ?>
@@ -40,9 +46,5 @@ if (have_posts()) : while (have_posts()) : the_post();
             </div>
 <? endif; ?>
 			<!-- Post navigation -->
-            <div class="posts-navigation">
-            	<?php next_posts_link('&laquo; Older entries'); ?>
-				<?php previous_posts_link('&sect; Newer entries &raquo;'); ?>
-			</div>
             
 <?php get_footer(); ?>

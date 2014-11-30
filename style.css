@@ -1,0 +1,185 @@
+/*
+Theme Name: Maya Cogman
+Theme URI: http://www.grcogman.com
+Author: No&euml;lle D. Anthony
+Author URI: http://www.noelleanthony.com/
+Description: Custom theme for G.R. "Maya" Cogman!
+Version: 1.0
+Date Created: 2/3/2014
+Date Modified: 2/3/2014
+Notes: Main palette: #34361E, #FFE49B, #D99748, #8C451C, #401A12, #260101
+*/
+@font-face { font-family: Alegreya; font-variant: small-caps; src: url('fonts/Alegreya/AlegreyaSC-Regular.otf'); }
+@font-face { font-family: Alegreya; font-weight: bold; font-style: italic; src: url('fonts/Alegreya/Alegreya-BoldItalic.otf'); }
+@font-face { font-family: Alegreya; font-style: italic; src: url('fonts/Alegreya/Alegreya-Italic.otf'); }
+@font-face { font-family: Alegreya; font-weight: bold; src: url('fonts/Alegreya/Alegreya-Bold.otf'); }
+@font-face { font-family: Alegreya; src: url('fonts/Alegreya/Alegreya-Regular.otf'); }
+@font-face { font-family: AlexBrush; src: url('fonts/AlexBrush-Regular.ttf'); }
+
+/* Elements */
+
+body {
+	background-image: url('images/background-tile.png');
+	background-color: #FFE49B;
+	color: #260101;
+	font-size: 16px;
+		font-family: Alegreya, serif;
+	line-height: 1.5em;
+	min-height: 100%;
+}
+
+a {
+	color: #8C451C;	
+}
+
+/* Classes */
+
+div.post {
+
+}
+
+div.post-head {
+
+}
+
+div.post-title {
+	color: #401A12;
+	float: left;
+	font-size: 1.5em;
+		font-variant: small-caps;	
+		font-weight: normal;
+	line-height: 1.25em;
+	width: 75%;
+}
+
+a.title {
+	text-decoration: none;
+}
+
+div.post-info {
+	float: right;
+	text-align: right;
+	width: 25%;
+}
+
+span.postDate {
+	
+}
+
+div.post-content {
+
+}
+
+div.post-navigation {
+	
+}
+
+div.posts-navigation {
+	
+}
+
+div.sidebar {
+	
+}
+
+/* IDs */
+
+div#container {
+	margin-left: auto;
+		margin-right: auto;
+	width: 1000px;
+	
+}
+
+div#header {
+	background-image: url('images/maya-header.png');
+		background-position: right top;
+		background-repeat: no-repeat;
+	padding-right: 250px;
+	padding-bottom: 0.5em;
+	height: 140px;
+}
+
+div#header ul {
+	list-style: none;
+		list-style-image: none;
+	padding-left: 1.5em;
+	padding-top: 100px;
+}
+
+div#header ul li {
+	float: left;
+	font-size: 2em;
+		font-family: AlexBrush, serif;
+		font-weight: bold;
+	padding-right: 1.5em;	
+	text-decoration: none;
+}
+
+div#header ul li a {
+	text-decoration: none;
+}
+
+div#header ul li a:hover {
+	color: #7B340B;
+}
+
+div#header ul li ul, div#header ul li ul li {
+	font-size: 0.8em;		
+}
+
+div#header ul li ul {
+	/*border-top: 1px solid #260101;*/
+	margin: 3px;
+	padding: 0;
+	position: absolute;
+	visibility: hidden;
+}
+
+div#header ul li ul li {
+	/*background-image: url('images/container-background.png');	*/
+	display: inline;
+	float: none;
+	text-decoration: none;	
+}
+
+div#subcontainer {
+	background-image: url('images/container-background.png');
+		background-position: left top;
+		background-repeat: repeat-y;	
+}
+
+div#main {
+	float: left;
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	width: 70%;
+}
+
+div#sidebar-right {
+	float: right;
+	width: 25%;
+		min-width: 200px;
+}
+
+div#sidebar-right ul {
+	list-style: none;
+		list-style-image: none;
+	padding-left: 0px;
+}
+
+div#sidebar-bottom {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+div#sidebar-bottom ul {
+	list-style: none;
+		list-style-image: none;
+	padding-left: 0px;
+}
+
+ul#sidebar-bot {
+	font-size: 14px;
+	text-align: center;
+}

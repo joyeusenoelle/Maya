@@ -1,4 +1,114 @@
-/* CSS Document */
-/* Main palette: #34361E, #FFE49B, #D99748, #8C451C, #401A12, #260101 */
+/*
+Theme Name: Maya Cogman
+Theme URI: http://www.grcogman.com
+Author: No&euml;lle D. Anthony
+Author URI: http://www.noelleanthony.com/
+Description: Custom theme for G.R. "Maya" Cogman!
+Version: 1.0
+Date Created: 2/3/2014
+Date Modified: 2/3/2014
+Notes: Main palette: #34361E, #FFE49B, #D99748, #8C451C, #401A12, #260101
+*/
+@font-face { font-family: Alegreya; src: url('fonts/Alegreya/Alegreya-Regular.otf'); }
+@font-face { font-family: Alegreya; font-weight: bold; src: url('fonts/Alegreya/Alegreya-Bold.otf'); }
+@font-face { font-family: Alegreya; font-style: italic; src: url('fonts/Alegreya/Alegreya-Italic.otf'); }
+@font-face { font-family: Alegreya; font-weight: bold; font-style: italic; src: url('fonts/Alegreya/Alegreya-BoldItalic.otf'); }
+@font-face { font-family: Alegreya; font-variant: small-caps; src: url('fonts/Alegreya/AlegreyaSC-Regular.otf'); }
 
 
+/* Elements */
+
+body {
+	background-image: url('../images/background-tile.png');
+	background-color: #FFE49B;
+	color: #260101;
+	font-size: 12px;
+		font-family: Alegreya, serif;
+	line-height: 1.5em;
+}
+
+a {
+	color: #8C451C;	
+}
+
+/* Classes */
+
+div.post {
+
+}
+
+div.post-head {
+
+}
+
+div.post-title {
+	color: #401A12;
+	float: left;
+	font-size: 1.5em;
+		font-variant: small-caps;	
+		font-weight: normal;
+	width: 75%;
+}
+
+a.title {
+	
+}
+
+div.post-info {
+	float: right;
+	width: 25%;
+}
+
+span.postDate {
+	
+}
+
+div.post-content {
+
+}
+
+div.post-navigation {
+	
+}
+
+div.posts-navigation {
+	
+}
+
+div.sidebar {
+	
+}
+
+/* IDs */
+
+div#container {
+	background-image: url('../images/container-background.png');
+		background-position: left top;
+		background-repeat: repeat-y;
+}
+
+div#header {
+	background-image: url('../images/maya-header.png');
+		background-position: left top;
+		background-repeat: no-repeat;
+	padding-left: 300px;
+}
+
+div#main {
+	float: left;
+	width: 70%;
+}
+
+div#sidebar-right {
+	float: right;
+	width: 25%;
+		min-width: 200px;
+}
+
+div#sidebar-bottom {
+	
+}
+
+ul#sidebar-bot {
+	
+}
